@@ -45,7 +45,10 @@
      overflow: hidden;
      transition: 0.3s;
 }
-
+.Open_MenuList {
+     height: 330px; 
+   }
+   
 .Menu_List_Item {
      padding: 20px 0px;
      list-style: none;
@@ -53,7 +56,4 @@
      font-size: calc(0.5em + 0.5rem);
 }
 
-.Open_MenuList {
-  height: 330px; 
-}
 

@@ -1,14 +1,16 @@
-import styles from '../../../styles/header.module.scss'
+import styles from '../../../../styles/header.module.scss'
 import Image from 'next/image'
-import Logo from '../../../public/logo.png'
+import Logo from '../../../../public/logo.png'
+import {toggleClass} from '../../actions/Header'
 
 export function Header() {
 
-     function openMenu(target: HTMLElement) {
-          target.classList.toggle(styles.Open_Menu)
-          const menu_list = document.getElementsByClassName(styles['Menu_List'])
-          menu_list[0].classList.toggle(styles.Open_MenuList)
-     }
+
+  function openMenu(){
+     toggleClass(styles.Menu, styles.Open_Menu)
+     toggleClass(styles.Menu_List, styles.Open_MenuList)
+  }
+    
   
    
 
@@ -24,7 +26,7 @@ export function Header() {
         </div>
           
         <nav className={styles.Menu}   
-         onClick={e => openMenu(e.currentTarget)}
+         onClick={e => openMenu()}
         >        
             <svg fill='white' className={styles.Menu_Img} viewBox="0 0 100 80" width="30" height="40">
                 <rect width="70" height="10"></rect>
