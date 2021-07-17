@@ -1,0 +1,59 @@
+.Header_Container {
+     color: rgb(246, 250, 245);
+     display: flex;
+     justify-content: space-between;
+     height: 70px;
+     align-items: center;
+     position: relative;
+}
+
+.Logo_Image {
+     margin-left: 1em;
+}
+
+.Menu_Img {
+     margin-left: 8px; 
+     height: 30px !important;
+     align-self: center;
+     justify-self: center;
+     justify-content: center;
+     align-items: center;
+    
+
+}
+
+.Menu {
+     height: 100%;
+     width: 70px; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     transition: 0.3s;
+}
+.Open_Menu {
+     background-color: black !important;
+}
+
+.Menu_List {
+     top: 70%;
+     width: 100%;
+     left: 0;
+     height: 0;
+     background-color: black;  
+     position: absolute;
+     overflow: hidden;
+     transition: 0.3s;
+}
+
+.Menu_List_Item {
+     padding: 20px 0px;
+     list-style: none;
+     height: 70px;
+     font-size: calc(0.5em + 0.5rem);
+}
+
+.Open_MenuList {
+  height: 330px; 
+}
+
