@@ -3,7 +3,7 @@ export function UpdateSction() {
 
     return (
         <div className={styles.Container} >
-            <div className={styles.Wrapper} >
+            <div className={`${styles.Wrapper} a`} >
                <h1>Get updates</h1>
                <p>Lorem ipsum dolor sit.</p>
                <form>

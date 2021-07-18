@@ -30,7 +30,7 @@ export function Slide() {
     }
 
     return ( 
-        <div className={styles.Container} >
+        <div className={`${styles.Container} a`} >
             <div>
                  <Image
                    alt='review'

@@ -1,21 +1,21 @@
 import Image from 'next/image'
 import decorationIMG from '../../../../public/back.png'
 import styles from '../../../../styles/sectionhome.module.scss'
-
+import animate from '../../../../styles/subir.module.scss'
 
 
 export function HomeSection() {
 
 
     return (
-        <div className={styles.Container} > 
+        <div className={styles.Container}> 
          
-             <div className={styles.Interactions} >
+             <div className={`${styles.Interactions} a`}  >
                    <h1 className={styles.Text} >Momentum</h1>
                    <h3 className={styles.Sub_Text} >Launch the product-and savor the momemtum</h3>
                    <button className={styles.Button } >Get the App</button>
              </div>
-             <div className={styles.decoration_IMG} >
+             <div className={`${styles.decoration_IMG} a`} >
                 <Image alt= '' src={decorationIMG} />
             </div>
          
