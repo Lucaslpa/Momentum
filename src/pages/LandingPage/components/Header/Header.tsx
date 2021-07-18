@@ -15,7 +15,8 @@ export function Header() {
    
 
     return (
-      <header className={styles.Header_Container} >
+    <header className={styles.Header_Container} >
+      <div className={styles.Header_Wrap}>
         <div className={styles.Logo_Image} >
           <Image
            src={Logo}
@@ -39,6 +40,7 @@ export function Header() {
                  <li className={styles.Menu_List_Item} onClick={() => focusIn('Download')}>Download</li>
              </ul>
           </nav>
-      </header>
+      </div>
+    </header>
     )
 }

@@ -10,5 +10,5 @@ export function toggleClass(classElement: string, newClassToggle: string) {
 
 export function focusIn(elementName:string) {
     const element = document.getElementById(elementName)
-     document.getElementById('Container')?.scrollTo({top: element?.offsetTop || 0, behavior: 'smooth'})
+     document.getElementById('Container')?.scrollTo({top: element?.offsetTop || 0,left: 0 , behavior: 'smooth'})
 }
