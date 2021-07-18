@@ -15,13 +15,7 @@ export function Header() {
     <header className={styles.Header_Container} >
       <div className={styles.Header_Wrap}>
         <div className={styles.Logo_Image} >
-          <Image
-           src="https://img-premium.flaticon.com/png/512/3479/premium/3479431.png?token=exp=1626644667~hmac=95a4c8750424eb176b12d49df0fb4c95"
-           alt='Logo'
-           width={60}
-           height={42}
-          />
-           <span style={{fontSize: 20, fontWeight: 1000}} >OMENTUM</span>
+           <span style={{fontSize: 20, fontWeight: 1000}} >MOMENTUM</span>
         </div>
           
         <nav className={styles.Menu}   
