@@ -16,14 +16,18 @@
     * {
         flex-wrap: wrap;
     }
-    p {
-        margin-bottom: 50px;
-        color: rgba(129, 129, 129, 0.884);
+    h1 {
         font-size: calc(1em + 0.5rem);
 
     }
+    p {
+        margin-bottom: 50px;
+        color: rgba(80, 80, 80, 0.884);
+        font-size: calc(0.8em + 0.5rem);
+        font-weight: 300;
+    }
     h4 {
-        color: rgba(180, 180, 180, 0.582)
+        color: rgba(180, 180, 180, 0.486)
     }
    
 }
@@ -44,6 +48,7 @@
 
 
 .Numbers {
+    margin: 60px 0; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
