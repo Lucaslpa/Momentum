@@ -18,12 +18,14 @@ export function HomeSection() {
              <div className={styles.decoration_IMG} >
                 <Image alt= '' src={decorationIMG} />
             </div>
-             <div>
+         
                  <Image alt='' src='https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b1437cbda3c5c3369fe4460_arrow.svg' 
-                 width={50}
-                 height={50}
+                 width={1300}
+                 height={740}
+                 layout="responsive"
+
                  />
-             </div>
+            
         </div>
     )
 }

@@ -6,28 +6,30 @@
     align-items: center;
     padding: 20px; 
     z-index: 1;
-    background-image: linear-gradient(170deg, #ffffff00, #55104caf);  
+    background-image: linear-gradient(180deg, #ffffff00, #4e0a47de);  
+    position: relative;
 }
 
 .Interactions {
      color: white;
      align-self: flex-start;
-     width: 100%;
      height: auto;
-    
+     z-index: 10;
      height: auto; 
      h1, h3, a {
         font-family: 'Roboto', sans-serif;
      }
      .Text {
-         font-size: calc(1em + 1.3rem);
+         font-size: calc(1em + 8vw);
          font-weight: 400;
      }
 
      .Sub_Text {
-        font-size: calc(1em + 0.7rem);
-        width: 160px;
+        font-size: calc(1em + 3vw);
         font-weight: 300;
+        margin: 20px 0px;
+        margin-right: 40%;
+
     }
      .Button {
         padding: 23px 45px; 
@@ -36,13 +38,49 @@
         background-color: #fc0a7e;
         color: rgb(252, 252, 252); 
         font-size: calc(0.5rem + 0.5em);; 
-        border-radius: 2%;
+        border-radius: 3px;
+        transition: 0.4s;
+        cursor: pointer;
+        &:hover {
+            background-color: #f1f1f1;
+            color: rgb(136, 111, 111); 
+        }
      }
-
-    
 }
 
 .decoration_IMG {
-   width: 90%; 
+   width: calc(70% + 10vw); 
    margin: 40px 0;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .Container {
+        height: 100vh;
+        align-items: center;
+    }
+    .decoration_IMG {
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+        width: 100%;
+        max-width: 550px;
+        z-index: 0;
+     }
+     .Interactions {
+         align-self: center;
+         justify-self: center;
+         width: 70%;
+         margin-top: 10%;
+         .Text {
+            font-size: calc(1em + 3vw);
+        }
+   
+        .Sub_Text {
+           font-size: calc(1em + 1.2vw);
+           margin-right: 10%;
+       }
+     } 
+
 }

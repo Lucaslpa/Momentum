@@ -26,8 +26,7 @@ export function Header() {
         </div>
           
         <nav className={styles.Menu}   
-         onClick={e => openMenu()}
-        >        
+         onClick={e => openMenu()}>        
             <svg fill='white' className={styles.Menu_Img} viewBox="0 0 100 80" width="30" height="40">
                 <rect width="70" height="10"></rect>
                 <rect y="30" width="70" height="10"></rect>

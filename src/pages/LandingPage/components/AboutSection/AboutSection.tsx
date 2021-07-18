@@ -11,10 +11,11 @@ export function AboutSection() {
              <Image
                  alt=''
                  src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa1b861bc189407c1a9b2c_dash-device.png"
-                 width={2250}
-                 height={1390}
+                 width={1300}
+                 height={740}
                  layout="responsive"
                  />
+               
         </div>
     )
 }

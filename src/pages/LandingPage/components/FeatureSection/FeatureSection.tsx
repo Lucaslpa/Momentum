@@ -1,22 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import styles from '../../../../styles/feature.module.scss'
-import Img1 from '../../../../public/section2.png'
-import Img2 from '../../../../public/section3.png'
-import Img3 from '../../../../public/section4.png'
-import Img4 from '../../../../public/burguer.jpg'
-import Img5 from '../../../../public/burguer2.jpg'
 import {Slide} from './Slide'
 
 
 const FeatureWraper = ({img, height}: {img: string, height: string}) => {
     return (<div className={styles.Feature_wrap} >
-     <h4> Lorem, ipsum dolor. </h4>
-     <h1> Lorem ipsum dolor sit amet consectetur. </h1>
-     <p>
+   <div>
+       <h4> Lorem, ipsum dolor. </h4>
+       <h1> Lorem ipsum dolor sit amet consectetur. </h1>
+        <p>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente soluta facilis ipsum deleniti sed. Incidunt.
-     </p>
-     <div style={{ position: "relative", width: "100%", height:`${height}`, paddingBottom: "20%" }} >
+        </p>
+   </div>
+     <div className={styles.Image} style={{margin: '10px' ,position: "relative", width: "100%", height:`${height}`, paddingBottom: "20%" }} >
      <Image
       alt=''
       src={img}
@@ -57,7 +54,6 @@ const FeatureNumbers = () => {
              <div>
                  <span>3,07</span>
                  <span>Lorem, ipsum.</span>
-
              </div>
              <div>
                   <span>24h</span>
@@ -76,9 +72,11 @@ export function FeatureSection() {
                  ["https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11c6a9804c1fef0bd52833_app-06.png", "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11bd467f519f18c7efccba_app-05.png",
                   "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b10d56ff2733b40d5e55e64_app-04.png"].map((imagem, index) => <FeatureWraper key={index} height='400px' img={imagem} />)
              }
-             {
+           <div className={styles.Extra} >
+           {
                  ['https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11be7f11a9de6a863497c0_icon-burger-magenta.svg','https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11be87d0d5fe5d7ff154af_icon-silverware-magenta.svg', 'https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11be8e11a9dee3ed3497c6_icon-data-magenta.svg'].map((image, index) => <ExtraFeatureWraper key={index} img={image} />)
              }
+           </div>
              <FeatureNumbers/>
             {
                  ["https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa50601bc189f92b1ad1f1_img-003.jpg", "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa506095815377cd097a34_img-002.jpg"].map((imagem, index) => <FeatureWraper key={index} height='250px' img={imagem} />)
