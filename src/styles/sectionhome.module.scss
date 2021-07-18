@@ -1,0 +1,48 @@
+.Container {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    z-index: 1;
+    background-image: linear-gradient(170deg, #ffffff00, #55104caf);  
+}
+
+.Interactions {
+     color: white;
+     align-self: flex-start;
+     width: 100%;
+     height: auto;
+    
+     height: auto; 
+     h1, h3, a {
+        font-family: 'Roboto', sans-serif;
+     }
+     .Text {
+         font-size: calc(1em + 1.3rem);
+         font-weight: 400;
+     }
+
+     .Sub_Text {
+        font-size: calc(1em + 0.7rem);
+        width: 160px;
+        font-weight: 300;
+    }
+     .Button {
+        padding: 23px 45px; 
+        border: none;
+        font-weight: 300;
+        background-color: #fc0a7e;
+        color: rgb(252, 252, 252); 
+        font-size: calc(0.5rem + 0.5em);; 
+        border-radius: 2%;
+     }
+
+    
+}
+
+.decoration_IMG {
+   width: 90%; 
+   margin: 40px 0;
+}
