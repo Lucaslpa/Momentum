@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import animate from '../../../../styles/subir.module.scss'
-import styles from '../../../../../../styles/about.module.scss'
+import animate from '../../../../../styles/subir.module.scss'
+import styles from '../../../../../styles/about.module.scss'
 
 
 export function AboutSection() {

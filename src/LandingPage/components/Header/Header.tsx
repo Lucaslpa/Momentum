@@ -1,4 +1,4 @@
-import styles from '../../../../styles/header.module.scss'
+import styles from '../../../styles/header.module.scss'
 import Image from 'next/image'
 import Logo from '../../../../public/logo.png'
 import {toggleClass,focusIn} from '../../actions/Header'
@@ -16,11 +16,12 @@ export function Header() {
       <div className={styles.Header_Wrap}>
         <div className={styles.Logo_Image} >
           <Image
-           src={Logo}
+           src="https://img-premium.flaticon.com/png/512/3479/premium/3479431.png?token=exp=1626644667~hmac=95a4c8750424eb176b12d49df0fb4c95"
            alt='Logo'
-           width={120}
+           width={60}
            height={42}
           />
+           <span style={{fontSize: 20, fontWeight: 1000}} >OMENTUM</span>
         </div>
           
         <nav className={styles.Menu}   

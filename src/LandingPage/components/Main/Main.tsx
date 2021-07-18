@@ -4,7 +4,7 @@ import {DownloadSection} from './Components/DownloadSection/DownloadSection'
 import {FeatureSection} from './Components/FeatureSection/FeatureSection'
 import {HomeSection} from './Components/HomeSection/HomeSection'
 import {UpdateSction} from './Components/UpdatesSection/UpdatesSection'
-import styles from '../../../../styles/main.module.scss'
+import styles from '../../../styles/main.module.scss'
 
 export function Main() {
     return (

@@ -1,4 +1,4 @@
-import styles from '../../../../../../styles/download.module.scss'
+import styles from '../../../../../styles/download.module.scss'
 export function DownloadSection() {
 
     return ( 

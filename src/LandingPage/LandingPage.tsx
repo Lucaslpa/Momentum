@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../../styles/main.module.scss'
+import styles from '../styles/main.module.scss'
 import {Header} from './components/Header/Header'
 import {Main} from './components/Main/Main'
 import {Footer} from './components/Footer/Footer'
 import { useEffect } from 'react'
-import animate from '../../styles/subir.module.scss'
+import animate from '../styles/subir.module.scss'
 
 export  function LandingPage() {
 

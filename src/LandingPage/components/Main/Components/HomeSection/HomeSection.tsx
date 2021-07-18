@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import decorationIMG from '../../../../../../public/back.png'
-import styles from '../../../../../../styles/sectionhome.module.scss'
+import decorationIMG from '../../../../../public/back.png'
+import styles from '../../../../../styles/sectionhome.module.scss'
 
 
 export function HomeSection() {
