@@ -1,7 +1,7 @@
 import styles from '../../../../styles/header.module.scss'
 import Image from 'next/image'
 import Logo from '../../../../public/logo.png'
-import {toggleClass} from '../../actions/Header'
+import {toggleClass,focusIn} from '../../actions/Header'
 
 export function Header() {
 
@@ -33,10 +33,10 @@ export function Header() {
                 <rect y="60" width="70" height="10"></rect>
              </svg>
              <ul className={styles.Menu_List}  >
-                 <li className={styles.Menu_List_Item}>About</li>
-                 <li className={styles.Menu_List_Item}>Feature</li>
-                 <li className={styles.Menu_List_Item}>How to Use</li>
-                 <li className={styles.Menu_List_Item}>Download</li>
+                 <li className={styles.Menu_List_Item} onClick={() => focusIn('About')} >About</li>
+                 <li className={styles.Menu_List_Item} onClick={() => focusIn('Feature')}>Feature</li>
+                 <li className={styles.Menu_List_Item} onClick={() => focusIn('HowToUse')}>How to Use</li>
+                 <li className={styles.Menu_List_Item} onClick={() => focusIn('Download')}>Download</li>
              </ul>
           </nav>
       </header>
