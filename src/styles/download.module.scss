@@ -1,0 +1,54 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11c1af7f519f50eaefd140_wavy-bg.svg), linear-gradient(
+135deg
+, #fc0a7e, #602bb6);
+padding: 90px 0;
+}
+
+.Content_Wrap {
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 14em;
+
+    flex-wrap: wrap;
+   
+    h1 {
+        color: white;
+        align-self: center;
+        width: 90%;
+        margin-bottom: 30px;
+        
+    }
+}
+
+.Buttons_Wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 340px;
+    flex-wrap: wrap;
+    button {
+        height: 66px;
+        width: 90%;
+        border: none;
+        margin: 10px 0 ;
+        font-family: Roboto, sans-serif;
+        font-size: calc(0.7rem + 0.5em);
+        font-weight: 400;
+        color: white;
+        background-color: transparent;
+        border: solid 2px rgba(216, 215, 216, 0.329);
+        border-radius: 3%;
+    }
+    button:first-child {
+        background-color: #fc0a7e;
+        border: none; 
+        
+    }
+}
