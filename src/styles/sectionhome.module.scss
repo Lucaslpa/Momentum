@@ -16,6 +16,8 @@
      height: auto;
      z-index: 10;
      height: auto; 
+     transform: translateY(50px);
+     opacity: 0;
      h1, h3, a {
         font-family: 'Roboto', sans-serif;
      }
@@ -49,8 +51,11 @@
 }
 
 .decoration_IMG {
-   width: calc(70% + 10vw); 
+   width: calc(80% + 10vw); 
    margin: 40px 0;
+   transform: translateY(50px);
+   opacity: 0;
+
 }
 
 
@@ -62,11 +67,12 @@
     }
     .decoration_IMG {
         position: absolute;
-        bottom: 0%;
+        bottom: -10%;
         right: 5%;
         width: 100%;
         max-width: 550px;
         z-index: 0;
+        
      }
      .Interactions {
          align-self: center;

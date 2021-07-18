@@ -15,16 +15,23 @@ align-content: center;
       font-family: Roboto, sans-serif;
       font-weight: 300;
       margin-top: 60px;
+      transform: translateY(50px);
+       opacity: 0;
   }
   h1 {
       font-weight: 300;
       margin: 0 20px; 
       margin-bottom: 60px;
+      transform: translateY(50px);
+       opacity: 0;
       
   }
 
   div {
       width: 100%;
+      animation-name: subir;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
   }
 }
 

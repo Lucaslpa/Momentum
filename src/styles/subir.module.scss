@@ -1,0 +1,20 @@
+@keyframes subir {
+    0% {
+       transform: translateY(50px);
+       opacity: 0;
+
+    }
+    100% {
+       transform: translateY(0px);
+       opacity: 1;
+   }
+}
+
+
+
+    .Subir {
+        animation-name: subir !important;
+        animation-duration: 1s !important;
+        animation-fill-mode: forwards !important;
+    }
+  
