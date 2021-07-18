@@ -9,9 +9,12 @@ export function AboutSection() {
              <h3> Lorem ipsum dolor sit. </h3>
              <h1> Lorem ipsum dolor sit amet consectetur adipisicing. </h1>
              <Image
-              alt=''
-              src={AboutIMG}
-             />
+                 alt=''
+                 src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa1b861bc189407c1a9b2c_dash-device.png"
+                 width={2250}
+                 height={1390}
+                 layout="responsive"
+                 />
         </div>
     )
 }
