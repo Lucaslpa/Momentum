@@ -1,4 +1,4 @@
-import styles from '../../../../styles/update.module.scss'
+import styles from '../../../../../../styles/update.module.scss'
 export function UpdateSction() {
 
     return (

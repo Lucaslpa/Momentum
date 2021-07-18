@@ -67,7 +67,7 @@
     }
     .decoration_IMG {
         position: absolute;
-        bottom: -10%;
+        bottom: 5%;
         right: 5%;
         width: 100%;
         max-width: 550px;
@@ -77,10 +77,10 @@
      .Interactions {
          align-self: center;
          justify-self: center;
-         width: 70%;
-         margin-top: 10%;
+         width: 75%;
+         margin-top: 6%;
          .Text {
-            font-size: calc(1em + 3vw);
+            font-size: calc(1em + 4.1vw);
         }
    
         .Sub_Text {
@@ -88,5 +88,4 @@
            margin-right: 10%;
        }
      } 
-
 }

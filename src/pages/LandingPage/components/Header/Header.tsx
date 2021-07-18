@@ -11,9 +11,6 @@ export function Header() {
      toggleClass(styles.Menu_List, styles.Open_MenuList)
   }
     
-  
-   
-
     return (
     <header className={styles.Header_Container} >
       <div className={styles.Header_Wrap}>

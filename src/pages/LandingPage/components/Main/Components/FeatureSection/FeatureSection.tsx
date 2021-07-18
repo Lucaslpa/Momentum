@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
-import styles from '../../../../styles/feature.module.scss'
+import styles from '../../../../../../styles/feature.module.scss'
 import {Slide} from './Slide'
 
 

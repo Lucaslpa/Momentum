@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import decorationIMG from '../../../../public/back.png'
-import styles from '../../../../styles/sectionhome.module.scss'
-import animate from '../../../../styles/subir.module.scss'
+import decorationIMG from '../../../../../../public/back.png'
+import styles from '../../../../../../styles/sectionhome.module.scss'
 
 
 export function HomeSection() {
@@ -17,7 +16,7 @@ export function HomeSection() {
              </div>
              <div className={`${styles.decoration_IMG} a`} >
                 <Image alt= '' src={decorationIMG} />
-            </div>
+             </div>
          
                  <Image alt='' src='https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b1437cbda3c5c3369fe4460_arrow.svg' 
                  width={1300}
