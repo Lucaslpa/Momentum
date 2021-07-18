@@ -4,9 +4,9 @@ import styles from '../../../../styles/feature.module.scss'
 import {Slide} from './Slide'
 
 
-const FeatureWraper = ({img, height}: {img: string, height: string}) => {
+const FeatureWraper = ({img, height, id}: {img: string, height: string, id?:string}) => {
     return (<div className={styles.Feature_wrap} >
-   <div>
+   <div id={id} className='a' >
        <h4> Lorem, ipsum dolor. </h4>
        <h1> Lorem ipsum dolor sit amet consectetur. </h1>
         <p>
@@ -67,7 +67,7 @@ const FeatureNumbers = () => {
 
 export function FeatureSection() {
     return ( 
-        <div  className={styles.Container} >
+        <div id='Feature' className={styles.Container} >
              {
                  ["https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11c6a9804c1fef0bd52833_app-06.png", "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11bd467f519f18c7efccba_app-05.png",
                   "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b10d56ff2733b40d5e55e64_app-04.png"].map((imagem, index) => <FeatureWraper key={index} height='400px' img={imagem} />)
@@ -79,10 +79,10 @@ export function FeatureSection() {
            </div>
              <FeatureNumbers/>
             {
-                 ["https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa50601bc189f92b1ad1f1_img-003.jpg", "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa506095815377cd097a34_img-002.jpg"].map((imagem, index) => <FeatureWraper key={index} height='250px' img={imagem} />)
+                 ["https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa50601bc189f92b1ad1f1_img-003.jpg", "https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa506095815377cd097a34_img-002.jpg"].map((imagem, index) => <FeatureWraper id='HowToUse' key={index} height='250px' img={imagem} />)
             }
              <Slide />
-             <img className={styles.platformsIMG} alt='' src='https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11c4dc541a84578a131910_logos.png' ></img>
+             <img className={`${styles.platformsIMG} a`} alt='' src='https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11c4dc541a84578a131910_logos.png' ></img>
         </div>
     )
 }
