@@ -7,6 +7,11 @@ import {LandingPage} from './LandingPage/LandingPage'
 export default function index() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Landing Page</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      
+      </Head>
       <LandingPage/>
     </div>
   )
