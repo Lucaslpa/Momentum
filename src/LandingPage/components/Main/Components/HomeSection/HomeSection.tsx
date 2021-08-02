@@ -11,7 +11,7 @@ export function HomeSection() {
          
              <div className={`${styles.Interactions} a`}  >
                    <h1 className={styles.Text} >Momentum</h1>
-                   <h3 className={styles.Sub_Text} >Launch the product-and savor the momemtum</h3>
+                   <h3 className={styles.Sub_Text} >Launch the product-and savor the momentum</h3>
                    <button className={styles.Button } >Get the App</button>
              </div>
              <div className={`${styles.decoration_IMG} a`} >
